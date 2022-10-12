@@ -7,6 +7,7 @@
     /* primary colors */
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
+    --brigh-blue-active: hsl(245, 83%, 68%);
     /* neutral colors */
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
@@ -25,9 +26,11 @@ body {
     font-family: var(--font);
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: top;
     background-color: var(--pale-blue);
     height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
 }
 
@@ -52,8 +55,6 @@ body {
 #card-info {
     display: grid;
     grid-template-rows: auto auto auto;
-    /* display: flex;
-    flex-direction: column; */
     padding: 20px;
     gap: 20px;
     text-align: center;
@@ -71,18 +72,21 @@ h1 {
 
 #description-text {
     color: var(--desaturated-blue);
+    width: 90%;
+    margin: auto;
 }
 
 #box-plan {
- display: grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     place-items: center;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     background-color: var(--very-pale-blue);
     height: 80px;
     border-radius: 10px;
+}
+
+#plan-info {
+    justify-self: start;
 }
 
 #plan-name {
@@ -93,8 +97,15 @@ h1 {
     color: var(--desaturated-blue);
 }
 
-.border-10 {
-    border-radius: 10px;
+#plan-change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#plan-change:hover {
+    color: var(--brigh-blue-active);
+    cursor: pointer;
 }
 
 #card-buttons {
@@ -108,18 +119,27 @@ h1 {
     font-weight: 700;
 }
 
-input[type=submit] {
+#proceed-button {
     background-color: var(--bright-blue);
     color: white;
     box-shadow: 0px 15px 20px hsla(224, 23%, 55%, 0.5);
 }
 
-input[type=button] {
+#proceed-button:hover {
+    background-color: var(--brigh-blue-active);
+    cursor: pointer;
+}
+
+#cancel-button {
     background-color: transparent;
     color: var(--desaturated-blue);
 }
 
-/* Desktop style */
-@media screen and (min-width: 1440px) {
-    
+#cancel-button:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.border-10 {
+    border-radius: 10px;
 }
