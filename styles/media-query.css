@@ -11,4 +11,10 @@
     #card-info {
         padding: 40px;
     }
+    #card-title {
+        font-size: 1.8em;
+    }
+    #box-plan {
+        height: 98px;
+    }
 }

@@ -41,6 +41,8 @@ body {
     width: 327px;
     height: 567px;
     border-radius: 20px;
+    transition: width 0.2s, height 0.4s;
+    transition-timing-function: ease;
 }
 
 #card-bg {
@@ -60,20 +62,21 @@ body {
     text-align: center;
 }
 
-h1 {
+#card-title {
     font-size: 1.5em;
-    font-weight: 900;
     margin-bottom: 20px;
 }
 
 .emphasis-text {
     color: var(--dark-blue);
+    font-weight: 900;
 }
 
 #description-text {
     color: var(--desaturated-blue);
     width: 90%;
     margin: auto;
+    line-height: 25px;
 }
 
 #box-plan {
@@ -87,10 +90,7 @@ h1 {
 
 #plan-info {
     justify-self: start;
-}
-
-#plan-name {
-    font-weight: 700;
+    line-height: 1.6em;
 }
 
 #plan-price {
@@ -119,6 +119,10 @@ h1 {
     font-weight: 700;
 }
 
+.border-10 {
+    border-radius: 10px;
+}
+
 #proceed-button {
     background-color: var(--bright-blue);
     color: white;
@@ -138,8 +142,4 @@ h1 {
 #cancel-button:hover {
     color: var(--dark-blue);
     cursor: pointer;
-}
-
-.border-10 {
-    border-radius: 10px;
 }
