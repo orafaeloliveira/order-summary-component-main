@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 992px) {
     body {
-        background-image: url(../images/pattern-background-desktop.svg);
+        background-image: url(../img/pattern-background-desktop.svg);
     }
     #card {
         height: 697px;

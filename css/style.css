@@ -24,7 +24,7 @@ body {
     place-items: center;
     grid-template-columns: 1fr;
     font-family: var(--font);
-    background-image: url(../images/pattern-background-mobile.svg);
+    background-image: url(../img/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -46,7 +46,7 @@ body {
 }
 
 #card-bg {
-    background-image: url(../images/illustration-hero.svg);
+    background-image: url(../img/illustration-hero.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
