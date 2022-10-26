@@ -34,7 +34,7 @@ body {
     box-sizing: border-box;
 }
 
-#card {
+.card {
     display: grid;
     grid-template-rows: 30% 1fr;
     background-color: white;
@@ -46,7 +46,7 @@ body {
     box-shadow: 0px 15px 20px hsla(224, 23%, 55%, 0.5);
 }
 
-#card-bg {
+.card-bg {
     background-image: url(../img/illustration-hero.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@ body {
     border-radius: 20px 20px 0px 0px;
 }
 
-#card-info {
+.card-info {
     display: grid;
     grid-template-rows: auto auto auto;
     padding: 20px;
@@ -63,7 +63,7 @@ body {
     text-align: center;
 }
 
-#card-title {
+.card-title {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
@@ -73,14 +73,14 @@ body {
     font-weight: 900;
 }
 
-#description-text {
+.description-text {
     color: var(--desaturated-blue);
     width: 90%;
     margin: auto;
     line-height: 25px;
 }
 
-#box-plan {
+.box-plan {
     display: grid;
     grid-template-columns: auto auto auto;
     place-items: center;
@@ -89,27 +89,27 @@ body {
     border-radius: 10px;
 }
 
-#plan-info {
+.plan-info {
     justify-self: start;
     line-height: 1.6em;
 }
 
-#plan-price {
+.plan-price {
     color: var(--desaturated-blue);
 }
 
-#plan-change {
+.plan-change {
     color: var(--bright-blue);
     font-weight: 700;
     text-decoration: underline;
 }
 
-#plan-change:hover {
+.plan-change:hover {
     color: var(--brigh-blue-active);
     cursor: pointer;
 }
 
-#card-buttons {
+.card-buttons {
     display: grid;
     gap: 5px;
 }
@@ -124,23 +124,26 @@ body {
     border-radius: 10px;
 }
 
-#proceed-button {
+.proceed-button {
     background-color: var(--bright-blue);
     color: white;
     box-shadow: 0px 15px 20px hsla(224, 23%, 55%, 0.5);
 }
 
-#proceed-button:hover {
+.proceed-button:hover {
     background-color: var(--brigh-blue-active);
     cursor: pointer;
 }
 
-#cancel-button {
+.cancel-button {
     background-color: transparent;
     color: var(--desaturated-blue);
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 0.875rem;
 }
 
-#cancel-button:hover {
+.cancel-button:hover {
     color: var(--dark-blue);
     cursor: pointer;
 }

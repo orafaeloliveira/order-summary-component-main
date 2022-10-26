@@ -4,17 +4,17 @@
     body {
         background-image: url(../img/pattern-background-desktop.svg);
     }
-    #card {
+    .card {
         height: 697px;
         width: 450px;
     }
-    #card-info {
+    .card-info {
         padding: 40px;
     }
-    #card-title {
+    .card-title {
         font-size: 1.8em;
     }
-    #box-plan {
+    .box-plan {
         height: 98px;
     }
 }
